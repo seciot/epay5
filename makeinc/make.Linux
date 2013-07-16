@@ -1,0 +1,20 @@
+#
+# This file is the Makefile include file
+# Usage : Set the flags for OS Linux
+#
+
+OS_TYPE=LINUX
+CC=cc
+CFLAGS= -c  -D$(OS_TYPE) -m32
+OFLAGS= -O2 -m32
+UNIXLIB= -lclntsh -ldl -lm -lnsl -lirc -lncurses
+NETLIB=
+PRECOMPILER=$(ORACLE_HOME)/bin/proc
+PRECOMPFLAGS= lines=yes
+DB_LIBS= -lclntsh -ldl -lm -lnsl -lirc
+DATABASE_INCPATH=$(ORACLE_HOME)/precomp/public
+DATABASE_LIBPATH=$(ORACLE_HOME)/lib32
+
+#
+# End.
+#

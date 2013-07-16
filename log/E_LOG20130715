@@ -1,0 +1,3 @@
+2013-07-15 15:58:19 SockRdWr.c(228) 0075225500000059: 读长度域失败。读到长度[-1] 期望长度[2]
+2013-07-15 15:58:19 ScriptPos.ec(399) 0075225500000059: ReadSock ERROR
+2013-07-15 15:58:24 ScriptPos.ec(532) FFFFFFFFFFFFFFFF: receive usr2 and exit

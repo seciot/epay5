@@ -1,0 +1,2 @@
+DATE=`date +%Y%m%d`
+vim $WORKDIR/log/T_LOG$DATE

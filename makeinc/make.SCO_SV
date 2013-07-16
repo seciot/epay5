@@ -1,0 +1,19 @@
+#
+# This file is the Makefile include file
+# Usage : Set the flags for diffence SCO Unix
+#
+
+OS_TYPE=`uname`
+CC=cc
+CFLAGS= -c -g -D$(OS_TYPE)
+OFLAGS= -O
+NETLIB= -lnsl_s -lsocket
+PRECOMPILER=/usr/sybase/bin/cpre
+PRECOMPFLAGS=
+DB_LIBS= -lct -lcs -lcomn -ltcl -lintl -ltli
+DATABASE_INCPATH=/usr/sybase/include
+DATABASE_LIBPATH=/usr/sybase/lib
+
+#
+# End.
+#

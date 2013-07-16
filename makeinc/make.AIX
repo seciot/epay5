@@ -1,0 +1,20 @@
+#
+# This file is the Makefile include file
+# Usage : Set the flags for OS AIX
+#
+
+OS_TYPE=`uname`
+CC=cc
+CFLAGS= -c -D$(OS_TYPE) -qcpluscmt
+OFLAGS= -O2
+UNIXLIB= -ldl -lm -lpthread -lnsl
+NETLIB=
+PRECOMPILER=$(ORACLE_HOME)/bin/proc 
+PRECOMPFLAGS= lines=yes
+DB_LIBS= -lclntsh -ldl -lm -lpthread -lnsl 
+DATABASE_INCPATH=$(ORACLE_HOME)/precomp/public
+DATABASE_LIBPATH=$(ORACLE_HOME)/lib32/
+
+#
+# End.
+#

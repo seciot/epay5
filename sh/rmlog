@@ -1,0 +1,5 @@
+ls -al $WORKDIR/log;
+touch *;
+rm -rf $WORKDIR/log/E_* $WORKDIR/log/T_* $WORKDIR/log/H* $WORKDIR/log/M* $WORKDIR/log/App* $WORKDIR/log/POS*;
+echo "日志文件清理完毕";
+ls -al $WORKDIR/log;

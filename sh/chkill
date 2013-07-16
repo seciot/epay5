@@ -1,0 +1,27 @@
+if [ x"$1" = x ] 
+then
+        echo "Usage: $0 <Process Name>"
+        exit
+fi
+if [ x"$2" = x ] 
+then
+        if [ `uname` = SCO_SV -o `uname` = HP-UX ]
+        then
+                j=16
+        elif [ `uname` = Linux ]
+        then
+                j=10
+        else
+                j=30
+        fi  
+else
+        j=$2
+fi
+userid=`id | awk '{print $1}' | awk -F= '{print $2}'|awk -F\( '{print $1}'`
+username=`whoami`
+#ps -e -ouser -opid -ocomm|grep "[[:space:]]*$1"|grep "[[:space:]]*$userid"|awk '{print $2}'|while read i
+ps -e -ouser -opid -ocomm|grep "[[:space:]]*$1"|grep "[[:space:]]*$username"|awk '{print $2}'|while read i
+do
+        echo "send signal[$j] to process [$1] pid[$i]"
+        kill -"$j" "$i"
+done

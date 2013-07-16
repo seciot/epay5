@@ -1,0 +1,45 @@
+2013-07-11 15:17:30 epayadm.ec(97) FFFFFFFFFFFFFFFF: ********************IPC测试，可忽略报错信息********************
+2013-07-11 15:17:30 Msgq.c(146) FFFFFFFFFFFFFFFF: call msgget 0(50464484) fail[2-No such file or directory]
+2013-07-11 15:17:30 Shm.c(124) FFFFFFFFFFFFFFFF: call shmget(16910054, 3670800) fail[2-No such file or directory]
+2013-07-11 15:17:30 EpayShm.ec(119) FFFFFFFFFFFFFFFF: 获取EPAY共享内存ID失败!
+2013-07-11 15:17:30 EpaySem.c(114) FFFFFFFFFFFFFFFF: 信号量类型:[-1]未定义!
+2013-07-11 15:17:30 epayadm.ec(108) FFFFFFFFFFFFFFFF: ********************IPC测试结束，IPC未创建********************
+2013-07-11 15:17:37 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:18:17 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:18:31 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:18:47 SendReqToHost.ec(109) 0075225500000059: 接收交易应答超时!MsgType:[4280]
+2013-07-11 15:18:47 ProcTrans.ec(194) 0075225500000059: time out recv return
+2013-07-11 15:19:17 SockRdWr.c(173) FFFFFFFFFFFFFFFF: ReadSockVarLen timeout
+2013-07-11 15:19:17 dup_st.c(270) FFFFFFFFFFFFFFFF: read length fail 0, nLength=[-3]
+2013-07-11 15:19:17 TdiMatch.ec(146) FFFFFFFFFFFFFFFF: 交易数据索引 shop_no:[123456789012345] pos_no:[00000001] sys_trace:[3723] 匹配记录超时!SendTime:[1373527097] RecvTime:[1373527157] TimeOut:[30]
+2013-07-11 15:19:17 dup_st.c(276) FFFFFFFFFFFFFFFF: GetTdiMatch [1]error
+2013-07-11 15:19:31 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:19:39 AutoVoid.ec(314) 0075225500000059: 更新原撤销流水 商户[123456789012345] 终端[00000001] 原系统参考号[] 卡号:[6226095910806129] POS交易日期[] 失败!SQLCODE=0 SQLERR=ORA-01403: no data found                                              
+2013-07-11 15:27:29 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:49:49 epayadm.ec(97) FFFFFFFFFFFFFFFF: ********************IPC测试，可忽略报错信息********************
+2013-07-11 15:49:49 Msgq.c(146) FFFFFFFFFFFFFFFF: call msgget 0(50464484) fail[2-No such file or directory]
+2013-07-11 15:49:49 Shm.c(124) FFFFFFFFFFFFFFFF: call shmget(16910054, 3670800) fail[2-No such file or directory]
+2013-07-11 15:49:49 EpayShm.ec(119) FFFFFFFFFFFFFFFF: 获取EPAY共享内存ID失败!
+2013-07-11 15:49:49 EpaySem.c(114) FFFFFFFFFFFFFFFF: 信号量类型:[-1]未定义!
+2013-07-11 15:49:49 epayadm.ec(108) FFFFFFFFFFFFFFFF: ********************IPC测试结束，IPC未创建********************
+2013-07-11 15:49:56 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:50:50 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:52:04 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:52:34 SendReqToHost.ec(109) 0075225500000059: 接收交易应答超时!MsgType:[2976]
+2013-07-11 15:52:34 ProcTrans.ec(194) 0075225500000059: time out recv return
+2013-07-11 15:52:50 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:53:04 SockRdWr.c(173) FFFFFFFFFFFFFFFF: ReadSockVarLen timeout
+2013-07-11 15:53:04 dup_st.c(270) FFFFFFFFFFFFFFFF: read length fail 0, nLength=[-3]
+2013-07-11 15:53:04 TdiMatch.ec(146) FFFFFFFFFFFFFFFF: 交易数据索引 shop_no:[123456789012345] pos_no:[00000001] sys_trace:[3726] 匹配记录超时!SendTime:[1373529124] RecvTime:[1373529184] TimeOut:[30]
+2013-07-11 15:53:04 dup_st.c(276) FFFFFFFFFFFFFFFF: GetTdiMatch [1]error
+2013-07-11 15:53:20 SendReqToHost.ec(109) 0075225500000059: 接收交易应答超时!MsgType:[2977]
+2013-07-11 15:53:20 ProcTrans.ec(194) 0075225500000059: time out recv return
+2013-07-11 15:53:44 TdiMatch.ec(146) FFFFFFFFFFFFFFFF: 交易数据索引 shop_no:[123456789012345] pos_no:[00000001] sys_trace:[3726] 匹配记录超时!SendTime:[1373529170] RecvTime:[1373529224] TimeOut:[30]
+2013-07-11 15:53:44 dup_st.c(311) FFFFFFFFFFFFFFFF: GetTdiMatch [1]error
+2013-07-11 15:54:20 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:54:50 SendReqToHost.ec(109) 0075225500000059: 接收交易应答超时!MsgType:[2978]
+2013-07-11 15:54:50 ProcTrans.ec(194) 0075225500000059: time out recv return
+2013-07-11 15:55:09 TdiMatch.ec(146) FFFFFFFFFFFFFFFF: 交易数据索引 shop_no:[123456789012345] pos_no:[00000001] sys_trace:[3726] 匹配记录超时!SendTime:[1373529260] RecvTime:[1373529309] TimeOut:[30]
+2013-07-11 15:55:09 dup_st.c(311) FFFFFFFFFFFFFFFF: GetTdiMatch [1]error
+2013-07-11 15:55:50 dbop.ec(283) FFFFFFFFFFFFFFFF: Disconnect DB[SQLCODE=-1012]
+2013-07-11 15:55:53 AutoVoid.ec(314) 0075225500000059: 更新原撤销流水 商户[123456789012345] 终端[00000001] 原系统参考号[] 卡号:[6226095910806129] POS交易日期[] 失败!SQLCODE=0 SQLERR=ORA-01403: no data found                                              
